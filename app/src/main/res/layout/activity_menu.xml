@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".menu">
+
+    <View
+        android:id="@+id/status_bar"
+        style="@style/status_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="3dp"
+
+        />
+
+    <ImageView
+        android:id="@+id/minicap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:contentDescription="cap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/minicap" />
+
+    <ImageView
+        android:id="@+id/minirobot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/minirobot"
+        app:layout_constraintTop_toTopOf="@id/minicap"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="14dp"
+        />
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/concepts_button"
+        style="@style/menu_buttons"
+        app:layout_constraintTop_toBottomOf="@+id/status_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/chall_button"
+        android:padding="15dp"
+        android:paddingStart="25dp"
+        android:text="Conceitos"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:drawableStart="@drawable/brain"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/chall_button"
+        style="@style/menu_buttons"
+        app:layout_constraintTop_toBottomOf="@id/concepts_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/calc_button"
+        android:padding="15dp"
+        android:paddingStart="25dp"
+        android:text="Desafios"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:drawableStart="@drawable/tabler_math"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/calc_button"
+        style="@style/menu_buttons"
+        app:layout_constraintTop_toBottomOf="@+id/chall_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="15dp"
+        android:paddingStart="25dp"
+        android:text="Calculadora"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:drawableStart="@drawable/calculator"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

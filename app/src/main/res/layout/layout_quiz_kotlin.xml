@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".desafios_tela"
+    android:background="@drawable/background"
+    >
+
+    <View
+        android:id="@+id/status_bar"
+        style="@style/status_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="3dp"
+
+        />
+
+    <ImageView
+        android:id="@+id/minicap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:contentDescription="cap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/minicap" />
+
+    <ImageView
+        android:id="@+id/minirobot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/minirobot"
+        app:layout_constraintTop_toTopOf="@id/minicap"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="14dp"
+        />
+
+    <TextView
+        android:id="@+id/text_pergunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/status_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Pergunta 1"
+        android:layout_marginTop="15dp"
+        >
+
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/alternativa_1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent=".1"
+        app:layout_constraintWidth_percent=".7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_pergunta"
+        app:layout_constraintBottom_toTopOf="@id/alternativa_2"
+        style="@style/alternativa_style"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="Alternativa A"
+
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/alternativa_2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent=".1"
+        app:layout_constraintWidth_percent=".7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/alternativa_1"
+        app:layout_constraintBottom_toTopOf="@id/alternativa_3"
+        style="@style/alternativa_style"
+        android:layout_marginTop="10dp"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="Alternativa B"
+
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/alternativa_3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent=".1"
+        app:layout_constraintWidth_percent=".7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/alternativa_4"
+        app:layout_constraintTop_toBottomOf="@id/alternativa_2"
+        style="@style/alternativa_style"
+        android:layout_marginTop="10dp"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="Alternativa C"
+
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/alternativa_4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent=".1"
+        app:layout_constraintWidth_percent=".7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/alternativa_3"
+        style="@style/alternativa_style"
+        android:layout_marginTop="10dp"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="Alternativa B"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+
+        >
+    </TextView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

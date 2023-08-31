@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_constraintHorizontal_weight="100"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    >
+
+    <View
+        android:id="@+id/status_bar"
+        style="@style/status_bar"
+        android:elevation="7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <ImageView
+        android:id="@+id/minicap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/minicap" />
+
+    <ImageView
+        android:id="@+id/minirobot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/minicap"
+        app:srcCompat="@drawable/minirobot" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/settings"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/settings"
+        app:layout_constraintBottom_toTopOf="@+id/status_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/barra_calculadora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_teal"
+        android:padding="5dp"
+        android:text="Calculadora"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/status_bar"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/text_conta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="35dp"
+        android:background="@color/light_blue"
+        android:gravity="end"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="40dp"
+        android:text="5=5"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/barra_calculadora">
+
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/text_resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:background="@color/light_blue"
+        android:gravity="end"
+        android:paddingStart="10dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"
+        android:text="5=5"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/text_conta">
+
+    </TextView>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botao_soma"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:background="@color/light_blue"
+        android:padding="10dp"
+        android:text="+"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/botao_um"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_resultado"
+
+        >
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botao_subtracao"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@color/light_blue"
+        android:padding="10dp"
+        android:text="-"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/botao_dois"
+        app:layout_constraintEnd_toStartOf="@+id/botao_multiplicacao"
+        app:layout_constraintStart_toEndOf="@+id/botao_soma"
+        app:layout_constraintTop_toBottomOf="@+id/text_resultado"
+
+
+        >
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botao_multiplicacao"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@color/light_blue"
+        android:padding="10dp"
+        android:text="x"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/botao_tres"
+        app:layout_constraintEnd_toStartOf="@+id/botao_divisao"
+        app:layout_constraintStart_toEndOf="@+id/botao_subtracao"
+        app:layout_constraintTop_toBottomOf="@+id/text_resultado"
+
+
+        >
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botao_divisao"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="35dp"
+        android:background="@color/light_blue"
+        android:padding="10dp"
+        android:text="÷"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/empty_space"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_resultado"
+
+
+        >
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botao_virgula"
+        android:layout_width="84.5dp"
+        android:layout_height="84.5dp"
+        android:layout_marginStart="35dp"
+        android:background="@color/light_blue"
+        android:text=","
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></androidx.appcompat.widget.AppCompatButton>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botao_sete"
+        android:layout_width="84.5dp"
+        android:layout_height="84.5dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/light_blue"
+        android:text="7"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/botao_virgula"
+        app:layout_constraintStart_toStartOf="parent"></androidx.appcompat.widget.AppCompatButton>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botao_quatro"
+        android:layout_width="wrap_content"
+        android:layout_height="84.5dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/light_blue"
+        android:text="4"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/botao_um"
+        app:layout_constraintBottom_toTopOf="@+id/botao_sete"
+        app:layout_constraintStart_toStartOf="parent"></androidx.appcompat.widget.AppCompatButton>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botao_um"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.5"
+        android:layout_height="84.5dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/light_blue"
+        android:text="1"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/botao_soma"
+        app:layout_constraintBottom_toTopOf="@+id/botao_quatro"
+        app:layout_constraintStart_toStartOf="parent"></androidx.appcompat.widget.AppCompatButton>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botao_zero"
+        android:layout_width="84.5dp"
+        android:layout_height="84.5dp"
+        android:layout_marginStart="1dp"
+        android:background="@color/light_blue"
+        android:text="0"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/botao_virgula"></androidx.appcompat.widget.AppCompatButton>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botao_oito"
+        android:layout_width="84.5dp"
+        android:layout_height="84.5dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/light_blue"
+        android:text="8"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/botao_zero"
+        app:layout_constraintStart_toEndOf="@+id/botao_sete"></androidx.appcompat.widget.AppCompatButton>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botao_cinco"
+        android:layout_width="wrap_content"
+        android:layout_height="84.5dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/light_blue"
+        android:text="5"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/botao_oito"
+        app:layout_constraintStart_toEndOf="@+id/botao_quatro">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botao_dois"
+        android:layout_width="wrap_content"
+        app:layout_constrainedWidth="true"
+        android:layout_height="84.5dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/light_blue"
+        android:text="2"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/botao_cinco"
+        app:layout_constraintStart_toEndOf="@+id/botao_um">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botao_backspace"
+        android:layout_width="84.5dp"
+        android:layout_height="84.5dp"
+        android:layout_marginStart="1dp"
+        android:background="@color/light_blue"
+
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/botao_zero"
+        tools:ignore="SpeakableTextPresentCheck"></androidx.appcompat.widget.AppCompatButton>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botao_nove"
+        android:layout_width="84.5dp"
+        android:layout_height="84.5dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/light_blue"
+        android:text="9"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/botao_backspace"
+        app:layout_constraintStart_toEndOf="@+id/botao_oito"></androidx.appcompat.widget.AppCompatButton>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botao_seis"
+        android:layout_width="wrap_content"
+        android:layout_height="84.5dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/light_blue"
+        android:text="6"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/botao_nove"
+        app:layout_constraintStart_toEndOf="@+id/botao_cinco"></androidx.appcompat.widget.AppCompatButton>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botao_tres"
+        android:layout_width="wrap_content"
+        app:layout_constrainedWidth="true"
+        android:layout_height="84.5dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/light_blue"
+        android:text="3"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/botao_seis"
+        app:layout_constraintStart_toEndOf="@+id/botao_dois"></androidx.appcompat.widget.AppCompatButton>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botao_igual"
+        android:layout_width="84.5dp"
+        android:layout_height="84.5dp"
+        android:layout_marginStart="1dp"
+        android:background="@color/orange"
+        android:text="="
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/botao_backspace"
+        tools:ignore="TextContrastCheck"></androidx.appcompat.widget.AppCompatButton>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botao_clear"
+        android:layout_width="84.5dp"
+        android:layout_height="84.5dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/light_blue"
+        android:text="C"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/botao_igual"
+        app:layout_constraintStart_toEndOf="@+id/botao_nove"></androidx.appcompat.widget.AppCompatButton>
+
+    <View
+        android:id="@+id/empty_space"
+        app:layout_constrainedWidth="true"
+        android:layout_width="wrap_content"
+        android:layout_height="170dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/light_blue"
+        app:layout_constraintBottom_toTopOf="@+id/botao_clear"
+        android:layout_marginEnd="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/botao_tres">
+
+
+    </View>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

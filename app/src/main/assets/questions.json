@@ -1,0 +1,167 @@
+{
+  "questions": [
+    {
+      "question": "QUAL NÚMERO É MAIOR DO QUE 17?",
+      "answer1": "21",
+      "answer2": "10",
+      "answer3": "9",
+      "answer4": "15",
+      "correct": "21"
+    },
+    {
+      "question": "QUAL NÚMERO TEM 3 DEZENAS?",
+      "answer1": "23",
+      "answer2": "37",
+      "answer3": "3",
+      "answer4": "6",
+      "correct": "37"
+    },
+    {
+      "question": "QUAL NÚMERO NÃO TEM 5 DEZENAS?",
+      "answer1": "56",
+      "answer2": "50",
+      "answer3": "45",
+      "answer4": "59",
+      "correct": "45"
+
+    },
+    {
+      "question": "QUAL NÚMERO TEM 9 DEZENAS?",
+      "answer1": "89",
+      "answer2": "13",
+      "answer3": "22",
+      "answer4": "98",
+      "correct": "98"
+    },
+    {
+      "question": "QUAL NÚMERO TEM MAIS DE 7 DEZENAS?",
+      "answer1": "82",
+      "answer2": "37",
+      "answer3": "17",
+      "answer4": "7",
+      "correct": "82"
+    },
+    {
+      "question": "QUAL NÚMERO É MAIOR DO QUE 81?",
+      "answer1": "79",
+      "answer2": "90",
+      "answer3": "33",
+      "answer4": "80",
+      "correct": "90"
+    },
+    {
+      "question": "QUAL NÚMERO TEM MENOS DE 1 DEZENA?",
+      "answer1": "57",
+      "answer2": "33",
+      "answer3": "3",
+      "answer4": "80",
+      "correct": "3"
+    },
+    {
+      "question": "QUAL NÚMERO É MAIOR?",
+      "answer1": "29",
+      "answer2": "38",
+      "answer3": "57",
+      "answer4": "66",
+      "correct": "66"
+    },
+    {
+      "question": "SOMANDO 5 DEZENAS COM 22, OBTEMOS",
+      "answer1": "10",
+      "answer2": "72",
+      "answer3": "21",
+      "answer4": "45",
+      "correct": "72"
+    },
+    {
+      "question": "SUBTRAINDO 1 DEZENA DE 41, OBTEMOS:",
+      "answer1": "40",
+      "answer2": "31",
+      "answer3": "41",
+      "answer4": "1",
+      "correct": "31"
+    },
+    {
+      "question": "SUBTRAINDO 8 UNIDADES DE 19, OBTEMOS:",
+      "answer1": "27",
+      "answer2": "10",
+      "answer3": "11",
+      "answer4": "9",
+      "correct": "11"
+    },
+    {
+      "question": "SUBTRAINDO 3 UNIDADES DE 57, OBTEMOS:",
+      "answer1": "50",
+      "answer2": "57",
+      "answer3": "60",
+      "answer4": "54",
+      "correct": "54"
+    },
+    {
+      "question": "SOMANDO 5 DEZENAS COM 0 UNIDADES, OBTEMOS:",
+      "answer1": "50",
+      "answer2": "5",
+      "answer3": "55",
+      "answer4": "15",
+      "correct": "50"
+    },
+    {
+      "question": "SOMANDO 7 DEZENAS COM 3 UNIDADES, OBTEMOS:",
+      "answer1": "10",
+      "answer2": "73",
+      "answer3": "33",
+      "answer4": "77",
+      "correct": "73"
+    },
+    {
+      "question": "QUAL NÚMERO É MENOR DO QUE 11?",
+      "answer1": "15",
+      "answer2": "21",
+      "answer3": "9",
+      "answer4": "13",
+      "correct": "9"
+    },
+    {
+      "question": "SOMANDO 2 DEZENAS COM 7 UNIDADES, OBTEMOS:",
+      "answer1": "12",
+      "answer2": "72",
+      "answer3": "54",
+      "answer4": "27",
+      "correct": "27"
+    },
+    {
+      "question": "QUAL NÚMERO É MENOR?",
+      "answer1": "89",
+      "answer2": "100",
+      "answer3": "96",
+      "answer4": "91",
+      "correct": "89"
+    },
+    {
+      "question": "QUAL NÚMERO É MENOR?",
+      "answer1": "15",
+      "answer2": "11",
+      "answer3": "21",
+      "answer4": "13",
+      "correct": "11"
+    },
+    {
+      "question": "QUAL NÚMERO É MAIOR?",
+      "answer1": "39",
+      "answer2": "41",
+      "answer3": "47",
+      "answer4": "45",
+      "correct": "47"
+    },
+    {
+      "question": "QUAL NÚMERO É MAIOR?",
+      "answer1": "33",
+      "answer2": "94",
+      "answer3": "10",
+      "answer4": "100",
+      "correct": "100"
+    }
+
+  ]
+
+}

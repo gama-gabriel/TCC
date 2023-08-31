@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="status_bar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginTop">65dp</item>
+        <item name="android:background">@color/blue</item>
+    </style >
+
+
+
+    <style name="alternativa_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/alternativa_shape</item>
+    </style>
+
+
+
+    <style name="alternativa_selecionada_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/alternativa_selecionada_shape</item>
+    </style>
+
+
+
+    <style name="menu_buttons">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">60dp</item>
+        <item name="android:layout_marginRight">60dp</item>
+        <item name="android:background">@drawable/bt_back</item>
+    </style>
+
+
+    <style name="style_continuar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">60dp</item>
+        <item name="android:layout_marginRight">60dp</item>
+        <item name="android:background">@drawable/bt_continuar</item>
+    </style>
+
+
+
+
+    <style name="avancar_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/avancar_shape</item>
+    </style>
+
+
+
+
+
+    <style name="voltar_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/voltar_shape</item>
+    </style>
+
+
+
+
+    <style name="destacar_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bt_continuar</item>
+
+
+
+
+    </style>
+
+
+
+
+</resources>

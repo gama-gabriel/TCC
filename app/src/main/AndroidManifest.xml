@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapplication1">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo_raa"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_raa"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Menu"
+        tools:targetApi="31">
+        <activity
+            android:name=".desafios_tela"
+            android:exported="false"
+
+
+            />
+
+        <activity
+            android:name=".conceito3"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".conceito2_3"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".conceitos2ponto1_2"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".conceito2_2"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".conceitos_menu_2"
+            android:exported="false" />
+        <activity
+            android:name=".conceito2ponto1"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".conceito_1ponto1"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".conceitos_menu"
+            android:exported="false" />
+        <activity
+            android:name=".Calculadora"
+            android:exported="true"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".menu"
+            android:exported="true" />
+        <activity
+            android:name=".splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
